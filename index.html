@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adwaith's Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #0f172a;
+      color: #f1f5f9;
+      line-height: 1.6;
+      padding: 0 20px;
+    }
+
+    header {
+      padding: 20px 0;
+      text-align: center;
+      background-color: #1e293b;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #38bdf8;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 10px;
+    }
+
+    nav ul li a {
+      color: #f1f5f9;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px 40px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .highlight {
+      color: #38bdf8;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #38bdf8;
+      color: #0f172a;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #0ea5e9;
+    }
+
+    section {
+      padding: 40px 0;
+    }
+
+    .about-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      text-align: center;
+    }
+
+    .profile-pic {
+      width: 300px;
+      height: 300px;
+      border-radius: 20px;
+      object-fit: cover;
+      border: 4px solid #38bdf8;
+    }
+
+    .skills {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .skills li {
+      background-color: #1e293b;
+      padding: 8px 15px;
+      border-radius: 20px;
+      border: 1px solid #38bdf8;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background-color: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .project-card h3 {
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    .project-card a {
+      color: #facc15;
+      text-decoration: none;
+    }
+
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+
+    #contact {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    #contact p {
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .about-content {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">Adwaith's Portfolio</div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <h1>Hi, I'm <span class="highlight">Adwaith</span></h1>
+    <p>A passionate Web Developer crafting beautiful user experiences.</p>
+    <a href="#projects" class="btn">View Projects</a>
+  </section>
+
+  <section id="about">
+    <h2 style="text-align:center; margin-bottom: 20px;">About Me</h2>
+    <div class="about-content">
+      <img src="adwaith.jpg" alt="My Photo" class="profile-pic" />
+      <div class="about-text">
+        <p>
+          Hi! I'm <strong>Adwaith P</strong>, a budding web developer passionate about building interactive and responsive websites. 
+          I love working with HTML, CSS, and JavaScript to bring creative ideas to life. Currently exploring other frontend frameworks.
+        </p>
+        <ul class="skills">
+          <li>HTML5 & CSS3</li>
+          <li>JavaScript</li>
+          <li>React.js</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 style="text-align:center; margin-bottom: 30px;">Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="https://plus.unsplash.com/premium_photo-1681487870238-4a2dfddc6bcb?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dG8lMjBkbyUyMGxpc3R8ZW58MHx8MHx8fDA%3D" alt="To-Do List App">
+        <h3>To-Do List App</h3>
+        <p>A simple task management app built using JavaScript. Add, delete, and mark tasks as done.</p>
+        <a href="https://github.com/AdwaithGit/toDoList-App" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="https://images.websitebuilderexpert.com/wp-content/uploads/2017/11/Best-Portfolio-Website-Builders.jpg" alt="Portfolio Website">
+        <h3>Portfolio Website</h3>
+        <p>This very portfolio you're viewing! Built using HTML, CSS, and JavaScript.</p>
+        <a href="https://github.com/AdwaithGit/Portfolio" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="https://inc42.com/wp-content/uploads/2023/03/BookMyShow-FY22_1200.jpg" alt="BookMyShow Clone">
+        <h3>BookMyShow Clone</h3>
+        <p>A clone of BookMyShow website using HTML and CSS</p>
+        <a href="https://github.com/AdwaithGit/bookMyShow-Clone" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Reach out to me via email: <strong>adwaithmadhu12@gmail.com</strong></p>
+  </section>
+</body>
+
+</html>
